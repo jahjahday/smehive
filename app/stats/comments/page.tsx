@@ -1,4 +1,4 @@
-import { Comments } from "@/app/components/comments/Comments";
+import { Comments } from "@/components/comments/Comments";
 
 const page = () => {
   return (

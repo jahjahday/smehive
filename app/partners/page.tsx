@@ -1,8 +1,9 @@
-import { Header } from "../components/smes/Header";
+import { Header } from "../../components/smes/Header";
+import { Table } from "@/components";
 
 const page = () => {
   return (
-    <div className="bg-[#fafafa] h-screen w-[1275px] p-10 ml-10 ">
+    <div className="">
       <Header
         sme="smes and partners"
         title="SMEs and Partners"
@@ -10,6 +11,15 @@ const page = () => {
         opt2="All New (15)"
         opt3="Any date"
         opt4="Anywhere"
+      />
+      <Table
+        input={true}
+        row1="Service Provider"
+        row2="Website"
+        row3="Location"
+        row4="No of Service"
+        row5="Email Address"
+        row6="Date Joined"
       />
     </div>
   );

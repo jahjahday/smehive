@@ -1,63 +1,14 @@
-import { useMemo } from 'react';
-import { endpoints } from './endpoint';
-interface IParams {
-    endpoint: string
-    method?: 'GET' | 'POST' | 'DELETE' | 'PUT' | 'PATCH'
-}
+import { endpoints } from "./endpoint";
 
-interface IQueryParam {
-    query?: Record<string, string> | null
-    param?: string
-}
+export const register = (data : Record<string, string>, endpoint: string) => {
+    const res = fetch(endpoint, {
+        body: JSON.stringify(data)
+        method: GET
+    })
 
-function createQueryFn({ endpoint }: IParams) {
-    return async ({ query = null, param = '' }: IQueryParam = {}) => {
-        const urlQuery = query
-        ? `${endpoint}?${new URLSearchParams(query).toString()}`
-        : endpoint
-        const url = urlQuery.replace(':param', param)
-        // const response = await fetch(
-        //     url
-        //     ? {
-        //         headers: {
-        //             authorization: `Bearer ${token}`
-        //         }
-        //     }
-        //     : undefined
-        // )
-
-        // if (!response.ok) {
-            const = await Response.json()
-            throw new Error(err.message)
+        if (!res.ok {
+            throw new Error("Failed")
         }
-        const result = await Response.json()
-        return result
-    }
-}
-
-function createMutateFn({ endpoint, method }: IParams) {
-    return async (data: any, param: string= '') => {
-        const url = endpoint.replace(':param', param)
-        const response = await fetch(url, {
-            headers: {
-                "Content-Type": 'application/json',
-                ...(token
-                    ? {
-                        
-                    })
-            }
-        })
-    }
-}
-
-export function useAPIService() {
-    const [user] = useAppState()
-    const [auth ] = endpoints
-
-    const servicesApi = useMemo(() => ({
-        resgister: createMutateFn({
-            endpoints: auth.registration,
-            method: 'POST'
-        })
-    }))
+        return res.json()
+    })
 }

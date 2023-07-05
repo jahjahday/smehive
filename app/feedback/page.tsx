@@ -1,8 +1,8 @@
-import { Header } from "../components/smes/Header";
+import { Header } from "@/components/smes/Header";
 
 const pages = () => {
   return (
-    <div className="bg-[#fafafa] h-screen w-[1275px] p-10 ml-10 ">
+    <div className=" ">
       <Header
         sme="feedback"
         title="All Feedback"

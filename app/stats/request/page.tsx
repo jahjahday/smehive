@@ -1,8 +1,8 @@
-import { Request } from "@/app/components/request/Request";
+import { Request } from "@/components/request/Request";
 
 const page = () => {
   return (
-    <div className="w-[68%] ml-[9em] mt-[20px]">
+    <div className=" mt-[20px]">
       <Request />
     </div>
   );

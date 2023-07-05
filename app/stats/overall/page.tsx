@@ -1,8 +1,8 @@
-import { Overall } from "@/app/components/overall/Overall";
+import { Overall } from "@/components/overall/Overall";
 
 const page = () => {
   return (
-    <div className="w-[68%] ml-[9em] mt-[20px]">
+    <div className=" mt-[20px]">
       <Overall />
     </div>
   );

@@ -1,4 +1,4 @@
-export const BASE_URL = "base url"
+export const BASE_URL = "10.1.29.182"
 
 function createEndpointUrl(endpoint: string) {
     return `${BASE_URL}/${endpoint}`

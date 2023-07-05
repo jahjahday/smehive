@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { Archivo } from "next/font/google";
 import Navbar from "./navbar/Navbar";
 
-const inter = Inter({
+const archivo = Archivo({
   subsets: ["latin"],
 });
 
@@ -18,9 +18,9 @@ export default function StatLayout({
 }) {
   return (
     <section>
-      <div className={inter.className}>
-        <div className="ml-[7em] mt-[7em]">
-          <Navbar />
+      <div className={archivo.className}>
+        <div className="">
+          {/* <Navbar /> */}
         </div>
         <main>{children}</main>
       </div>

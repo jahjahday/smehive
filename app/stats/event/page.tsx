@@ -1,9 +1,12 @@
-import { Card } from "@/app/components";
-import { Select } from "@/app/components/select/select";
+// import { Card } from "@/app/components";
+// import { Select } from "@/app/components/select/select";
+
+import { Card } from "@/components";
+import { Select } from "@/components/select/select";
 
 const page = () => {
   return (
-    <div className="w-[68%] ml-[9em] mt-[20px]">
+    <div className="w-[68%] mt-[20px]">
       <Card title="Total Events" number={1800} percentage="" colors="danger" />
       <div className="flex gap-4 my-[2em]">
         <Select

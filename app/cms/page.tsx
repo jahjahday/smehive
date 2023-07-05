@@ -1,4 +1,4 @@
-import CMS from "../components/cms/CMS";
+import CMS from "../../components/cms/CMS";
 
 const page = () => {
   return (

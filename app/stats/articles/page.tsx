@@ -1,4 +1,4 @@
-import { Articles } from "@/app/components/articles/Articles";
+import { Articles } from "@/components";
 
 const page = () => {
   return (
