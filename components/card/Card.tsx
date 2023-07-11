@@ -13,7 +13,7 @@ const colorsMap = {
   primary: "bg-[#F5FCFF]",
   danger: "bg-[#FFF7F4]",
   secondary: "bg-[#FAF4FF]",
-  green: "bg-[#F4FFFB]"
+  green: "bg-[#F4FFFB]",
 };
 
 export const Card: React.FC<cardProps> = ({
@@ -25,17 +25,17 @@ export const Card: React.FC<cardProps> = ({
 }) => {
   return (
     <div
-      className={`border-[1px] border-[#DBDEE0] mt-4 rounded-[14.464px] w-[17em] max-lg:w-[16.5em] max-2xl:w-[18em] max-md:w-[10em] h-[9em] flex flex-col justify-center pl-[38px] ${colorsMap[colors]}`}
+      className={`border-[1px] border-[#DBDEE0] mt-4 rounded-[14.464px] w-[17.3em] max-lg:w-[17em] max-2xl:w-[18em] max-sm:w-[20em] max-sm:h-[10em] h-[9em] flex flex-col justify-center pl-[38px] ${colorsMap[colors]}`}
     >
-      <h1 className="text-[1.075rem] font-Archivo font-[500] leading-[20px] text-[#1b3938]">
+      <h1 className="text-[1.075rem] max-sm:text-[2rem] font-Archivo font-[500] leading-[20px] text-[#1b3938]">
         {title}
       </h1>
       <section className="flex mt-2 gap-4">
-        <h1 className="text-[2.075rem] mt-2 text-[#1b3938] font-Archivo font-[500] leading-[36px]">
+        <h1 className="text-[2.075rem] max-sm:text-[1.5rem] mt-2 text-[#1b3938] font-Archivo font-[500] leading-[36px]">
           {number}
         </h1>
         {percentage ? (
-          <div className="relative bg-white border-[1px] pl-2 h-[75%] w-[5em] rounded-3xl ml-4">
+          <div className="relative bg-white border-[1px] max-sm:mt-4 max-sm:ml-12 pl-2 left-8 h-[75%] w-[5em] rounded-3xl ml-4">
             <h1 className=" text-[.85rem] font-[500] text-[#545151] font-Archivo mt-1 leading-[21.696px]">
               {percentage}
             </h1>

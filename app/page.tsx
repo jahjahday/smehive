@@ -7,15 +7,15 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex justify-between mt-10 flex-wrap max-lg:ml-4">
+    <div className="flex justify-between mt-14 ml-[6em] flex-wrap max-lg:ml-4">
       <div className="w-[75%]">
-        <h3 className="text-[rgba(3, 20, 19, 0.70)] mt-[6|em] text-[1.2rem] font-Archivo">
+        <h3 className="text-[#031413b3] font-[500] mt-[6|em] text-[1.2rem] font-Archivo">
           Dashboard Overview
         </h3>
         <h1 className="text-[#072025] font-Archivo text-[2.7rem] mt-3 font-[600] leading-[32px] tracking-[-0.4px]">
           Hi, Natasha
         </h1>
-        <div className="grid grid-cols-4 max-md:block max-lg:gap-16 max-lg:grid-cols-2 max-lg:w-[16.5em] max-xl:grid-cols-3 max-xl:w-[55em] max-2xl:grid-cols-3 gap-2 mt-14">
+        <div className="grid grid-cols-4 max-md:block max-lg:gap-1 max-lg:grid-cols-2 max-lg:w-full max-xl:grid-cols-3 max-xl:w-[55em] max-2xl:grid-cols-3 gap-4 mt-10">
           <Card
             title="All Users"
             number={2200}
@@ -66,7 +66,7 @@ export default function Home() {
             <Card title="Enquiries" number={39} percentage="" colors="green" />
           </Link>
           <Link href="./stats">
-            <div className=" max-xl:w-[17em] flex h-[9em] mt-4 border-[1px] border-solid justify-center items-center lg:gap-[30px] rounded-[80px] border-[#dbdee0]">
+            <div className="flex h-[9em] mt-4 border-[1px] border-solid justify-center items-center lg:gap-[30px] rounded-[80px] border-[#dbdee0]  max-xl:w-[17em] max-sm:w-[20em]">
               <button className="w-[40%] text-[#1b3938] text-[1.2rem] font-Archivo font-[500] leading-20px">
                 View all activities
               </button>
@@ -80,7 +80,7 @@ export default function Home() {
           <BlogContainer />
         </div>
       </div>
-      <div className="lg:mt-[-2em]">
+      <div className="lg:mt-[-3em]">
         <RightSidebar />
       </div>
     </div>

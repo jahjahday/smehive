@@ -3,7 +3,7 @@ import { Card } from "../card";
 export const Overall = () => {
   return (
     <div>
-      <div className="grid grid-cols-4 w-[75%]">
+      <div className="grid grid-cols-4 w-[81%]">
         <Card
           title="Submitted Requests"
           number={2220}

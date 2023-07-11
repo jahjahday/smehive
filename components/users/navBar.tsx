@@ -34,7 +34,7 @@ export const NavBar = () => {
       <span
         className={`${
           item.id === active
-            ? " cursor-pointer px-[1em] py-[1rem] font-[500] text-[#1b3938] font-Archivo"
+            ? " cursor-pointer  px-[1em] py-[1rem] font-[500] text-[#1b3938] font-Archivo"
             : "cursor-pointer px-[1em] font-[400] text-[#91a3a5]"
         }`}
         onClick={() => handleSetActive(item.id)}
@@ -49,8 +49,8 @@ export const NavBar = () => {
       <button
         className={`${
           button.id === activeButton
-            ?  "bg-[#1b3938] font-[400] rounded-[40px] mt-2 px-8 py-3 text-[#fff] text-center text-[.9rem] leading-[9.9px]"
-             : " text-[#91a3a5] text-[.9rem] font-[500] mt-2 px-3 py-3 text-center leading-[9.9px]"
+            ? "bg-[#1b3938] font-[400] rounded-[40px] mt-2 px-8 py-3 ease-out duration-300 text-[#fff] text-center text-[.9rem] leading-[9.9px]"
+            : " text-[#91a3a5] text-[.9rem] font-[500] mt-2 px-3 py-3 text-center ease-in duration-300 leading-[9.9px]"
         }`}
         onClick={() => setActiveButton(button.id)}
       >
@@ -61,18 +61,16 @@ export const NavBar = () => {
   ));
 
   return (
-    <nav className=" p-8 border-[1px] h-[40em] border-solid border-[#DBDEE0] mt-8 rounded-[12px] max-lg:w-[35em] max-xl:w-[50em]">
-      <div className="flex justify-between">
-
-      <ul>
-        <li className="flex text-[1rem] font-Archivo leading-[20px]">
-          {servicesTabs}
-        </li>
-      </ul>
-      <div className=" flex justify-around w-[14em] h-[3em] bg-[#F4F6F6] rounded-[40px] font-Archivo">
-
-      {buttonTabs}
-      </div>
+    <nav className=" p-8 max-sm:p-2 max-sm:w-[340px] border-[1px] h-[40em] max-sm:h-[18em] border-solid border-[#DBDEE0] mt-8 rounded-[12px] max-lg:w-[35em] max-xl:w-[50em]">
+      <div className="flex justify-between max-sm:block">
+        <ul className="">
+          <li className="flex text-center text-[1rem] font-Archivo leading-[20px]">
+            {servicesTabs}
+          </li>
+        </ul>
+        <div className=" flex justify-around max-sm:mx-auto max-sm:my-4 w-[14em] h-[3em] bg-[#F4F6F6] rounded-[40px] font-Archivo">
+          {buttonTabs}
+        </div>
       </div>
       <div className="w-[]">
         <AreaChart />

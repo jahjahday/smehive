@@ -1,11 +1,17 @@
-import { Home } from "@/components/cms/home/Home"
+import { CmsAccess } from "@/components";
+import { Editable } from "@/components";
+import { CmsNav } from "@/components";
 
 const page = () => {
   return (
-    <div>
-        <Home />
+    <div className="mt-[3em] ">
+      <CmsNav title="Home" />
+      <div className="flex w-[90%] ml-[6em] gap-10">
+        <CmsAccess />
+        <Editable />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

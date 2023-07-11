@@ -1,9 +1,9 @@
-import { Table } from "@/components/table/table"
+import { Table } from "@/components/table/table";
 
 export const Articles = () => {
   return (
     <div>
-        <Table
+      <Table
         input
         row1="Image"
         row2="Heading"
@@ -13,5 +13,5 @@ export const Articles = () => {
         row6="Action"
       />
     </div>
-  )
-}
+  );
+};

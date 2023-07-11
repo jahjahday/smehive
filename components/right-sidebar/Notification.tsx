@@ -5,12 +5,12 @@ import person from "../../app/assets/svg/BugBeetle.svg";
 
 export const Notification = () => {
   return (
-    <div className="bg-white rounded-[20px] p-3 pb-5">
+    <div className="bg-white rounded-[20px] p-4 py-8">
       <ul className="flex justify-between">
-        <li className="text-[#1b3938] text-[1.2rem] font-Archivo font-[600] leading-[24px]">
+        <li className="text-[#1b3938] text-[1.2rem] cursor-pointer font-Archivo font-[700] leading-[24px]">
           Notifications
         </li>
-        <li className="text-[0.95rem] font-Archivo  leading-[16px] tracking-[0.4px] mt-1 opacity-60">
+        <li className="text-[0.95rem] font-Archivo cursor-pointer font-[500] leading-[16px] tracking-[0.4px] mt-1 opacity-60">
           See all
         </li>
       </ul>
@@ -18,10 +18,10 @@ export const Notification = () => {
         <div className="flex gap-3 px-2">
           <Image src={person} alt="" width={20} className="mt-[-17px]" />
           <div>
-            <h4 className="text-[0.975rem] w-[230] overflow-hidden whitespace-nowrap font-Archivo leading-[20px] text-ellipsis">
+            <h4 className="text-[1.075rem] font-[500] text-[#083545]  w-[230px] overflow-hidden whitespace-nowrap font-Archivo leading-[20px] text-ellipsis">
               You have a pending approval
             </h4>
-            <p className="text-[0.85rem] opacity-50 font-Archivo leading-[20px] text-[rgba(0, 0, 0, 0.4)]">
+            <p className="text-[0.95rem] font-[500] opacity-50 font-Archivo leading-[20px] text-[rgba(0, 0, 0, 0.4)]">
               Just now
             </p>
           </div>
@@ -29,10 +29,10 @@ export const Notification = () => {
         <div className="flex gap-3 px-2">
           <Image src={user} alt="" width={15} className="mt-[-17px]" />
           <div>
-            <h4 className="text-[0.975rem] overflow-hidden  w-[230px] truncate whitespace-nowrap font-Archivo leading-[20px] text-ellipsis">
+            <h4 className="text-[1.075rem] font-[500] text-[#083545] overflow-hidden  w-[230px] truncate whitespace-nowrap font-Archivo leading-[20px] text-ellipsis">
               New SME registered
             </h4>
-            <p className="text-[0.85rem] opacity-50 font-Archivo leading-[20px] text-[rgba(0, 0, 0, 0.4)]">
+            <p className="text-[0.95rem] opacity-50  font-[500] font-Archivo leading-[20px] text-[rgba(0, 0, 0, 0.4)]">
               59 minutes ago
             </p>
           </div>
@@ -40,10 +40,10 @@ export const Notification = () => {
         <div className="flex  gap-3 px-2">
           <Image src={person} alt="" width={15} className="mt-[-17px]" />
           <div className="truncate">
-            <h4 className="text-[0.975rem]  w-[230px] truncate whitespace-nowrap font-Archivo leading-[20px]">
+            <h4 className="text-[1.075rem] font-[500] text-[#083545] w-[230px] truncate whitespace-nowrap font-Archivo leading-[20px]">
               You have a request that needs to be fixed.
             </h4>
-            <p className="text-[0.85rem] opacity-50 font-Archivo leading-[20px] text-[rgba(0, 0, 0, 0.4)]">
+            <p className="text-[0.95rem] opacity-50 font-[500] font-Archivo leading-[20px] text-[rgba(0, 0, 0, 0.4)]">
               12 hours ago
             </p>
           </div>
@@ -51,10 +51,10 @@ export const Notification = () => {
         <div className="flex  gap-3 px-2">
           <Image src={pending} alt="" width={15} className="mt-[-17px]" />
           <div>
-            <h4 className="text-[.95rem]  w-[230px] truncate overflow-hidden whitespace-nowrap font-Archivo leading-[20px] text-ellipsis">
+            <h4 className="text-[1.075rem] font-[500] text-[#083545] w-[230px] truncate overflow-hidden whitespace-nowrap font-Archivo leading-[20px] text-ellipsis">
               Andi Lane subscribed to you
             </h4>
-            <p className="text-[0.85rem] opacity-50 font-Archivo leading-[20px] text-[rgba(0, 0, 0, 0.4)]">
+            <p className="text-[0.95rem] opacity-50 font-[500] font-Archivo leading-[20px] text-[rgba(0, 0, 0, 0.4)]">
               Today, 11:59 AM
             </p>
           </div>

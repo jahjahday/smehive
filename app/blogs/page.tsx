@@ -40,7 +40,7 @@ const page = () => {
   };
 
   return (
-    <div className=" mt-[2em]">
+    <div className=" mt-[2em] w-[88%] mx-auto">
       <ul className="flex gap-3 text-[rgba(3, 20, 19, 0.70)] text-[12px] font-Archivo">
         <Link href="/">
           <li>HOME</li>
@@ -57,11 +57,11 @@ const page = () => {
           <Image src={logo} alt="" width={15} className="" />
         </div>
       </section>
-      <div className="flex gap-10">{serviceTabs}</div>
+      <div className="flex gap-5">{serviceTabs}</div>
 
-      { active === 1 && <Articles /> }
+      {active === 1 && <Articles />}
       {active === 2 && <Posts />}
-      { active === 3 && <Authors /> }
+      {active === 3 && <Authors />}
     </div>
   );
 };

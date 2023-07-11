@@ -1,6 +1,3 @@
-
 export const HeroBanner = () => {
-  return (
-    <div>HeroBanner</div>
-  )
-}
+  return <div>HeroBanner</div>;
+};

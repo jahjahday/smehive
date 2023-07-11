@@ -5,7 +5,7 @@ import { Chart } from "../charts/Chart";
 export const Body = () => {
   return (
     <>
-      <div className="grid grid-cols-3 mt-8">
+      <div className="grid grid-cols-3 mt-8  max-sm:w-[430px]">
         <div className="flex gap-2">
           <ul className="flex flex-col justify-between gap-4">
             <li className="bg-[#baedbd] w-[8px] h-[8px] rounded-full"></li>

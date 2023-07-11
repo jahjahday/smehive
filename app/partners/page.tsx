@@ -3,7 +3,7 @@ import { Table } from "@/components";
 
 const page = () => {
   return (
-    <div className="">
+    <div className="mx-auto w-[88%]">
       <Header
         sme="smes and partners"
         title="SMEs and Partners"
@@ -12,7 +12,7 @@ const page = () => {
         opt3="Any date"
         opt4="Anywhere"
       />
-      <Table
+      {/* <Table
         input={true}
         row1="Service Provider"
         row2="Website"
@@ -20,7 +20,7 @@ const page = () => {
         row4="No of Service"
         row5="Email Address"
         row6="Date Joined"
-      />
+      /> */}
     </div>
   );
 };

@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
 
 interface HeaderProps {
   sme: string;
@@ -16,10 +16,15 @@ export const Header = ({ sme, title, opt1, opt2, opt3, opt4 }: HeaderProps) => {
       <nav>
         <ul className="flex gap-3 text-[rgba(3, 20, 19, 0.70)] text-[1rem] font-[Archivo] uppercase">
           <Link href="/">
-            <li className="cursor-pointer">Home</li>
+            <li className="cursor-pointer text-[.95rem] font-Archivo font-[500] text-[#031413] opacity-70">
+              Home
+            </li>
           </Link>
-          <FaArrowRight className="mt-[2px] uppercase" />
-          <li> {sme} </li>
+          <Image src="/svg/forwardRight.svg" alt="" width={8} height={1} />
+          <li className="text-[.95rem] font-Archivo font-[400] text-[#031413] opacity-70">
+            {" "}
+            {sme}{" "}
+          </li>
         </ul>
       </nav>
       <div className="text-[#072025] text-[2.5rem] font-Archivo font-[600] mt-3 leading-[32px] tracking-[-0.4px]">

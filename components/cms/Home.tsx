@@ -4,9 +4,9 @@ import { CmsNav } from "./CmsNav";
 
 export const Home = () => {
   return (
-    <div className="mt-[2em]">
-      <CmsNav />
-      <div className="flex gap-10 ">
+    <div className="mt-[3em] ">
+      <CmsNav title="Home" />
+      <div className="flex w-[90%] ml-[6em] gap-10">
         <CmsAccess />
         <Editable />
       </div>

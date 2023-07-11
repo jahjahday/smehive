@@ -16,7 +16,7 @@ export const Editable = () => {
   const sortable = tabs.map((item) => (
     <div
       key={item.id}
-      className="flex justify-between cursor-pointer border-b text-[#083545] text-[1rem] font-Archivo font-[400] leading-[28px] py-5"
+      className="flex justify-between cursor-pointer border-b text-[#083545] text-[1rem] font-Archivo font-[500] leading-[28px] py-5"
     >
       {item.name}
       <Image src="/svg/vectordown.svg" alt="" width={10} height={10} />
@@ -25,17 +25,19 @@ export const Editable = () => {
 
   return (
     <div>
-      <h2 className="text-[#083545] text-[1.2rem] font-[600] leading-[28px] mb-6">
-        Home has 8 editable Sections
-      </h2>
-      <div className="border-b mb-8">
-        <div className="mb-10">{sortable}</div>
+      <div className="w-[20em] h-[54em] border-b">
+        <h2 className="text-[#083545] text-[1.2rem] font-[600] leading-[28px] mb-6">
+          Home has 8 editable Sections
+        </h2>
+        <div className=" mb-8">
+          <div className="mb-10">{sortable}</div>
+        </div>
       </div>
-      <div className="flex gap-4 text-[1rem] font-Archivo font-[500] leading-[20px]">
+      <div className="flex justify-end gap-4 text-[1rem] mt-8 font-Archivo font-[500] leading-[20px]">
         <button className="text-[#829399] py-3 px-6 border rounded-[30px]">
           Cancel
         </button>
-        <button className="bg-[#9cb5be]  py-3 px-8 rounded-[30px]  text-[#fff] border">
+        <button className="bg-[#9cb5be]  py-3 px-14 rounded-[30px]  text-[#fff] border">
           Publish
         </button>
       </div>

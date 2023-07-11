@@ -3,7 +3,7 @@ import { Header } from "../../components/smes/Header";
 
 const pages = () => {
   return (
-    <div className="">
+    <div className="w-[88%] mx-auto">
       <Header
         sme="enquire"
         title="All Enquiries"

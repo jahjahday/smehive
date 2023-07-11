@@ -4,7 +4,7 @@ import arrow from "../../app/assets/svg/Button arrow (1).svg";
 
 export const Blog = () => {
   return (
-    <div className="bg-[#fbf7f4] p-12 w-[100%] max-lg:w-[35em]  h-[397px] border-[1px] rounded-[16px]">
+    <div className="bg-[#fbf7f4] p-12 max-sm:p-6 w-full max-sm:w-[22em] max-lg:w-[35em]  h-[397px] border-[1px] rounded-[16px]">
       <p className="text-[#576D75] text-[1rem] font-Archivo leading-20px tracking-[0.24px]">
         Latest Blog Article
       </p>
@@ -15,7 +15,7 @@ export const Blog = () => {
         <Image src={avater} alt="" width={50} className="h-[30px] mt-4" />
         <div>
           <h4>
-            <span className="text-[10px] font-Archivo leading-[20px] tracking-[0.2px] w-[120px]">
+            <span className="text-[.75rem] text-[#576d75] font-Archivo leading-[20px] tracking-[0.2px] w-[120px]">
               Updated By <br />
             </span>
             <span className="text-[1rem] font-Archivo font-[700] leading-[28px]">
@@ -24,7 +24,7 @@ export const Blog = () => {
           </h4>
         </div>
       </div>
-      <div className="border-[1px] w-[50%] h-[48px] p-4 bg-[#fff]  mt-12 flex justify-between items-center rounded-[42px]">
+      <div className="border-[1px] w-[50%] max-sm:w-[13em] h-[48px] max-sm:h-[60px] p-4 bg-[#fff]  mt-12 flex justify-between items-center rounded-[42px]">
         <button className="text-[1rem] font-Archivo font-[500] text-[#083545] leading-[20px]  ">
           View all Blogs
         </button>
