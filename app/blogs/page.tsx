@@ -25,8 +25,8 @@ const page = () => {
       <span
         className={`${
           item.id === active
-            ? " cursor-pointer border bg-[#0C323E] text-[#fff] rounded-[60px] border-[#0c648d] px-[2rem] py-[14px] font-[600] text-[1.2rem]"
-            : "cursor-pointer py-3 px-[30px] rounded-[60px] border-[#b3bdc0] text-[#0c323e] font-[500] border text-[1.3rem]"
+            ? " cursor-pointer ease-in duration-300 border bg-[#0C323E] text-[#fff] rounded-[60px] border-[#0c648d] px-[2rem] py-[14px] font-[600] text-[1.2rem]"
+            : "cursor-pointer py-3 px-[30px] duration-300 ease-in rounded-[60px] border-[#b3bdc0] text-[#0c323e] font-[500] border text-[1.3rem]"
         }`}
         onClick={() => handleSetActive(item.id)}
       >

@@ -25,13 +25,7 @@ export const Table = ({
     <div className="bg-white">
       <table className="w-full mt-10 text-[1.3rem] font-Archivo font-[400] leading-[24px] text-[#576d75]">
         <thead className="">
-          <th>a</th>
-          <th>a</th>
-          <th>a</th>
-          <th>a</th>
-          <th>a</th>
-          <th>a</th>
-          {/* <tr className="border-b h-24 flex justify-between items-center">
+          <tr className="border-b h-24 flex justify-between items-center">
             <span className="flex items-center gap-2">
               {input ? (
                 <th>
@@ -59,29 +53,34 @@ export const Table = ({
               <th>{row6}</th>
               <Image src="/svg/arrowDown.svg" alt="" height={10} width={20} />
             </span>
-          </tr> */}
+          </tr>
         </thead>
+      </table>
+      {/* <table className="w-full">
         <tbody>
           <tr className="">
-            {/* <td>{input}</td>
+            <td className="flex gap-4">
+              <input type="checkbox" />
+              <Image src="/img/gallery1.png" alt="" width={50} height={55} />
+            </td>
+            <td className="font-Archivo">Market Support Forum</td>
+            <td className="w-[23%]">
+              Generally, you can visit the official website of the bank from
+              whom you wish to ..
+            </td>
             <td>
-              {" "}
-              <Image
-                src="/img/gallery1.png"
-                alt=""
-                width={50}
-                height={55}
-              />{" "}
-            </td> */}
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
+              Abimbola Fernandez <br /> name@company.com
+            </td>
+            <td>
+              20/02/2022 <br /> 10:38am
+            </td>
+            <td>
+              <button>Accept</button>
+              <button>Reject</button>
+            </td>
           </tr>
         </tbody>
-      </table>
+      </table> */}
     </div>
   );
 };

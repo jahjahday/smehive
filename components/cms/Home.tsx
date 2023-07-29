@@ -8,7 +8,7 @@ export const Home = () => {
       <CmsNav title="Home" />
       <div className="flex w-[90%] ml-[6em] gap-10">
         <CmsAccess />
-        <Editable />
+        <Editable number={8} />
       </div>
     </div>
   );

@@ -2,6 +2,17 @@
 
 import Image from "next/image";
 
+interface EditableProps {
+  number: number;
+  // section1: string;
+  // section2: string;
+  // section3: string;
+  // section4: string;
+  // section5: string;
+  // section6: string;
+  // section7: string;
+}
+
 const tabs = [
   { id: 1, name: "Hero Banner" },
   { id: 2, name: "Main Categories" },
@@ -12,7 +23,16 @@ const tabs = [
   { id: 7, name: "Footer" },
 ];
 
-export const Editable = () => {
+export const Editable = ({
+  number,
+}: // section1,
+// section2,
+// section3,
+// section4,
+// section5,
+// section6,
+// section7,
+EditableProps) => {
   const sortable = tabs.map((item) => (
     <div
       key={item.id}
@@ -27,7 +47,7 @@ export const Editable = () => {
     <div>
       <div className="w-[20em] h-[54em] border-b">
         <h2 className="text-[#083545] text-[1.2rem] font-[600] leading-[28px] mb-6">
-          Home has 8 editable Sections
+          Home has {number} editable Sections
         </h2>
         <div className=" mb-8">
           <div className="mb-10">{sortable}</div>

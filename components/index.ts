@@ -1,3 +1,4 @@
+export { Button } from "./button/Button";
 export { Table } from "@/components/table/table";
 export { Feedback } from "./applications/Feedback";
 export { Manage } from "./blog/Manage";

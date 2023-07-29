@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Button } from "../button";
 
 export const CmsAccess = () => {
   return (
@@ -11,17 +11,8 @@ export const CmsAccess = () => {
           Empowering MSMEs with access to funding, information, infrastructure,
           and new markets
         </p>
-        <div className="flex items-center custom-background rounded-[40px] mt-[3em] p-3 w-[18%] gap-4">
-          <button className=" text-[1.1rem] mx-auto font-[600]">
-            Get Started
-          </button>
-          <Image
-            src="/svg/buttonarrow.svg"
-            alt=""
-            width={22}
-            height={1}
-            className=""
-          />
+        <div className=" mt-[3em]">
+          <Button title="Get Started" />
         </div>
       </section>
       <section className="mt-10 mx-auto">
